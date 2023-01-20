@@ -185,8 +185,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="studi-pustaka" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="studi-pustaka"><span class="header-section-number">2</span> Studi pustaka</h2>
-<p>Salah satu bagian yang penting dalam penelitian adalah melakukan studi literatur, yaitu membaca dari berbagai sumber sesuai dengan topik yang diteliti untuk menghasilkan ide/analisis baru yang dipresentasikan dalam sebuah karya ilmiah.</p>
-<p>Bab ini menguraikan dasar-dasar teori dan istilah yang berhubungan dengan permasalahan yang ditemui atau yang mendasari pemilihan topik laporan. Studi Pustaka dilengkapi dengan sumber referensi yang dipakai dan bukan berdasarkan asumsi penulis.</p>
+<p>Beras merupakan makanan pokok mayoritas masyarakat di Indonesia. Di lansir dari Indonesia Investments Indonesia merupakan negara ketiga sebagai negara yang memproduksi beras terbanyak di dunia dengan total volume produksi sebesar 70.600.000. BPS (2016) Dalam penjelasannya, produksi beras di Indonesia dalam 3 tahun terakhir (2013-2015) yakni sebesar 71,3; 70,9; dan 75,4 juta ton. Pengertian ini tentu saja mengindentifikasikan bahwa hal tersebut tidak membuat Indonesia berhenti menjadi negara importir beras.</p>
+<p>Produksi beras termasuk salah satu faktor penyebab impor beras. Impor beras dipengaruhi oleh beberapa faktor lainnya di antaranya sebagai berikut yaitu: GDP, Pengertian GDP ini merupakan seluruh barang serta jasa yang dihasilkan/diproduksi oleh seluruh warga masyarakat pada suatu wilayah negara yang bersangkutan (termasuk produksi warga negara asing di negara tersebut) di dalam periode tertentu biasanya dalam satu tahun.</p>
+<p>Kurs atau mata uang adalah perbandingan harga atau nilai dari mata uang suatu negara yang diukur dalam mata uang negara lain. Dalam penukaran uang asing, kurs sangat berperan penting. Sebab kurs adalah alat yang menerjemahkan berbagai harga dengan mata uang asing. Kurs mempunyai 3 jenis yaitu: kurs jual, kurs beli, dan tengah.</p>
+<p>Harga beras, Indonesia masih mengimpor beras dikarenakan, harga beras di Indonesia dua kali lipat lebih tinggi dibandingkan harga beras di Vietnam, Kamboja, dan Myanmar. Berdasarkan Kamus Besar Bahasa Indonesia (KBBI), tarif adalah harga satuan jasa, aturan pungutan, dan daftar bea masuk.</p>
 </section>
 <section id="metode-penelitian" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="metode-penelitian"><span class="header-section-number">3</span> Metode penelitian</h2>
@@ -216,17 +218,74 @@ y_{t}=\beta_0 + \beta_1 x_t
 <section id="analisis-masalah" class="level3" data-number="4.2">
 <h3 data-number="4.2" class="anchored" data-anchor-id="analisis-masalah"><span class="header-section-number">4.2</span> Analisis Masalah</h3>
 <p>Rumus yang digunakan pada analisis ini antara lain sebagai berikut:</p>
-<p>```{setwd(‘E:/Study/Metodologi Penelitian/R’)} library(‘readxl’) library(‘tidyverse’)</p>
-<p>#Baca data dat&lt;-read_excel(‘E.xlsx’) str(dat) head(dat)</p>
-<p>#Regresi reg1 &lt;- lm(Impor ~ Kurs+Harga+Produksi+Tarif+Konsumsi+LP+GDP,data=dat) summary(reg1)</p>
-<p>#ggplot #Hubungan antara Impor Beras dengan Produksi Beras ggplot(data=dat,aes(x=Impor,y=Produksi)) + geom_point()+ labs(title = ‘Hubungan Antara Impor Beras dan Produksi Beras’, x=‘Besar Impor (Ton)’, y=‘Besar Produksi(Ton)’, caption=‘Sumber: Badan Pusat Statistik’)</p>
-<p>#Hubungan antara Impor Beras dengan Harga Beras ggplot(data=dat,aes(x=Impor,y=Harga)) + geom_point()+ labs(title = ‘Hubungan Antara Impor dan Produksi’, x=‘Besar Impor (Ton)’, y=‘Harga Beras (Rp)’, caption=‘Sumber: Badan Pusat Statistik dan PIHPS Nasional’)</p>
-<p>#Hubungan antara Impor Beras dengan Kurs Rupiah terhadap USD ggplot(data=dat,aes(x=Impor,y=Kurs)) + geom_point()+ labs(title = ‘Hubungan Antara Impor dan Kurs’, x=‘Besar Impor (Ton)’, y=‘Kurs Rupiah terhadap USD(Rp)’, caption=‘Sumber: Badan Pusat Statistik dan Bank Indonesia’)</p>
-<p>#Hubungan antara Impor Beras dengan Tarif Bea Masuk ggplot(data=dat,aes(x=Impor,y=Tarif)) + geom_point()+ labs(title = ‘Hubungan Antara Impor dan Kurs’, x=‘Besar Impor (Ton)’, y=‘Tarif Bea Masuk (Rp/KGM)’, caption=‘Sumber: Badan Pusat Statistik dan NISW’)</p>
-<p>#Hubungan antara Impor Beras dengan Konsumsi Beras ggplot(data=dat,aes(x=Impor,y=Konsumsi)) + geom_point()+ labs(title = ‘Hubungan Antara Impor dan Kurs’, x=‘Besar Impor (Ton)’, y=‘Konsumsi Beras (Kg/Minggu)’, caption=‘Sumber: Badan Pusat Statistik’)</p>
-<p>#Hubungan antara Impor Beras dengan Luas Panen ggplot(data=dat,aes(x=Impor,y=LP)) + geom_point()+ labs(title = ‘Hubungan Antara Impor dan Kurs’, x=‘Besar Impor (Ton)’, y=‘Luas Panen (Ha)’, caption=‘Sumber: Badan Pusat Statistik’)</p>
-<p>ggplot(data=dat,aes(x=Impor,y=GDP)) + geom_point()+ labs(title = ‘Hubungan Antara Impor dan Produksi’, x=‘Impor Beras (Ton)’, y=‘Gross Domestic Bruto (Miliar Rupiah)’, caption=‘Sumber: Badan Pusat Statistik dan WDI’)</p>
-<p>```</p>
+<pre><code>setwd('E:/Study/Metodologi Penelitian/R')
+library('readxl')
+library('tidyverse')
+
+#Baca data
+dat&lt;-read_excel('E.xlsx')
+str(dat)
+head(dat)
+
+#Regresi
+reg1 &lt;- lm(Impor ~ Kurs+Harga+Produksi+Tarif+Konsumsi+LP+GDP,data=dat)
+summary(reg1)
+
+#ggplot
+#Hubungan antara Impor Beras dengan Produksi Beras
+ggplot(data=dat,aes(x=Impor,y=Produksi)) +
+  geom_point()+
+  labs(title = 'Hubungan Antara Impor Beras dan Produksi Beras',
+       x='Besar Impor (Ton)',
+       y='Besar Produksi(Ton)',
+       caption='Sumber: Badan Pusat Statistik')
+
+#Hubungan antara Impor Beras dengan Harga Beras
+ggplot(data=dat,aes(x=Impor,y=Harga)) +
+  geom_point()+
+  labs(title = 'Hubungan Antara Impor dan Harga Beras',
+       x='Besar Impor (Ton)',
+       y='Harga Beras (Rp)',
+       caption='Sumber: Badan Pusat Statistik dan PIHPS Nasional ')
+
+#Hubungan antara Impor Beras dengan Kurs Rupiah terhadap USD
+ggplot(data=dat,aes(x=Impor,y=Kurs)) +
+  geom_point()+
+  labs(title = 'Hubungan Antara Impor dan Kurs Rupiah terhadap USD',
+       x='Besar Impor (Ton)',
+       y='Kurs Rupiah terhadap USD(Rp)',
+       caption='Sumber: Badan Pusat Statistik dan Bank Indonesia ')
+
+#Hubungan antara Impor Beras dengan Tarif Bea Masuk
+ggplot(data=dat,aes(x=Impor,y=Tarif)) +
+  geom_point()+
+  labs(title = 'Hubungan Antara Impor dan Tarif Bea Masuk',
+       x='Besar Impor (Ton)',
+       y='Tarif Bea Masuk (Rp/KGM)',
+       caption='Sumber: Badan Pusat Statistik dan NISW')
+
+#Hubungan antara Impor Beras dengan Konsumsi Beras 
+ggplot(data=dat,aes(x=Impor,y=Konsumsi)) +
+  geom_point()+
+  labs(title = 'Hubungan Antara Impor dan Konsumsi Beras',
+       x='Besar Impor (Ton)',
+       y='Konsumsi Beras (Kg/Minggu)',
+       caption='Sumber: Badan Pusat Statistik')
+
+#Hubungan antara Impor Beras dengan Luas Panen
+ggplot(data=dat,aes(x=Impor,y=LP)) +
+  geom_point()+
+  labs(title = 'Hubungan Antara Impor dan Luas Panen',
+       x='Besar Impor (Ton)',
+       y='Luas Panen (Ha)',
+       caption='Sumber: Badan Pusat Statistik')
+
+ggplot(data=dat,aes(x=Impor,y=GDP)) +
+  geom_point()+
+  labs(title = 'Hubungan Antara Impor dan Gross Domestic Bruto',
+       x='Impor Beras (Ton)',
+       y='Gross Domestic Bruto (Miliar Rupiah)',
+       caption='Sumber: Badan Pusat Statistik dan WDI')</code></pre>
 <p>Hasil dari regresi</p>
 <pre><code>Call:
 lm(formula = Impor ~ Kurs + Harga + Produksi + Tarif + Konsumsi + 
